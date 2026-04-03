@@ -131,7 +131,9 @@ Você pode usar:
 - Documentação
 - Vídeos / tutoriais
 - IA
+- 
 **Mas precisa entender o que está fazendo!**
+  
 Você poderá ser questionado(a) sobre seu código.
 
 # 🚀 Mensagem final
