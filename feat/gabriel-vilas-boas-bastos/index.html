@@ -4,28 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosso Time | CalamaDevs</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <nav>
-            <div class="logo">Calama Devs. </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
+            <div class="logo">CalamaDevs</div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
             <h1>Trabalho em equipe faz o sonho acontecer</h1>
+            <button id="btn-participar" class="btn">Quero fazer parte!</button>
         </section>
 
+<section class="about-section container">
+    <div class="about-left">
+        <span class="subtitle">Sobre Nós</span>
+        <h2>Bem-vindo(a) à Calama Devs</h2>
+        <img src="assets/images/team.webp" alt="Equipe Calama Devs estudandos" class="about-img">
+    </div>
+
+    <div class="mission-rigt">
+        <p><strong>O time de desenvolvimento formado por estudantes de Análise e Desenvolvimento de Sistemas do IFRO – Campus Calama! 💻</strong></p>
+        <p>Somos movidos por tecnologia, colaboração e pelo desejo de gerar impacto real através do código. Aqui, acreditamos que ninguém nasce pronto — mas todos podem evoluir quando têm oportunidade, apoio e desafios certos.</p>
+
+        <div class="mission-box">
+            <h3>🌱 Nossa Missão</h3>
+            <p>Aprender na prática, construir soluções reais e evoluir juntos como desenvolvedores e seres humanos.</p>
+        </div>
+
+        <div class="what-we-do">
+            <h3>💡 O que fazemos</h3>
+            <ul class="check-list">
+                <li>Desenvolvemos projetos com foco social, acadêmico e educacional;</li>
+                <li>Aplicamos metodologias ágeis com organização em sprints;</li>
+                <li>Promovemos mentoria entre pares e aprendizado colaborativo;</li>
+                <li>Realizamos encontros técnicos, desafios internos e estudos em grupo;</li>
+                <li>Criamos um ambiente seguro para experimentar, errar, aprender e evoluir.</li>
+            </ul>
+        </div>
+    </div>
+</section>
         <section id="team-grid" class="container">
             <article class="card">
-                <img src="aqui vai uma imagem" alt="nome persona - função que desempenha">
+                <img src="assets/images/people_tam_256x256.png" alt="nome persona - função que desempenha">
                 <h3>Nome Persona</h3>
                 <p>Função que desempenha</p>
             </article>
@@ -35,7 +60,7 @@
     <div id="modal" class="hidden">
         <div class="modal-content">
             <p id="mensagem-motivacional"></p>
-            <button onclick="fecharModal()">fechar</button>
+            <button class="btn" onclick="fecharModal()">fechar</button>
         </div>
     </div>
     <script src="script.js"></script>
