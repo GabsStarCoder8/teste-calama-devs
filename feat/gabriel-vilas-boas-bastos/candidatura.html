@@ -40,7 +40,7 @@
             </div>
 
             <div class="form-container">
-                <form action="#" method="POST">
+                <form id="form-candidatura" iaction="#" method="POST">
                     <div class="input-group">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" required>
@@ -55,6 +55,8 @@
                     </div>
                     <button type="submit" class="btn-enviar">Enviar</button>
                 </form>
+
+                <p id="mensagem-sucesso" class="hidden" style="text-align: center; color: #38a118; font-size: 1.2rem; font-weight: bold; margin-top: 20px;"></p>
             </div>
 
         </div>
@@ -74,5 +76,6 @@
         </div>
     </footer>
 
+    <script src="js/candidatura.js"></script>
 </body>
 </html>
