@@ -6,28 +6,30 @@
     <title>Nosso Time | CalamaDevs</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-    <header>
-        <nav>
-            <div class="logo">CalamaDevs</div>
+    <header class="hero-header">
+        <nav class="container nav-top">
+            <div class="logo">CalamaDevs<span>.</span></div>
         </nav>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1>Trabalho em equipe faz o sonho acontecer</h1>
-            <button id="btn-participar" class="btn">Quero fazer parte!</button>
-        </section>
+        <div class="container hero-content">
+            <div class="hero-left">
+                <h1 class="hero-title">Nosso Time</h1>
+                <p class="hero-subtitle">Trabalho em equipe faz o sonho acontecer</p>
+                <button id="btn-participar" class="btn">Quero fazer parte!</button>
+            </div>
+        </div>
+    </header>
 
 <section class="about-section container">
     <div class="about-left">
         <span class="subtitle">Sobre Nós</span>
         <h2>Bem-vindo(a) à Calama Devs</h2>
-        <img src="assets/images/team.webp" alt="Equipe Calama Devs estudandos" class="about-img">
+        <img src="assets/images/logo-calamadevs.jpg" alt="logo calamadevs" class="about-img">
     </div>
 
-    <div class="mission-rigt">
+    <div class="about-right">
         <p><strong>O time de desenvolvimento formado por estudantes de Análise e Desenvolvimento de Sistemas do IFRO – Campus Calama! 💻</strong></p>
         <p>Somos movidos por tecnologia, colaboração e pelo desejo de gerar impacto real através do código. Aqui, acreditamos que ninguém nasce pronto — mas todos podem evoluir quando têm oportunidade, apoio e desafios certos.</p>
 
@@ -47,6 +49,7 @@
             </ul>
         </div>
     </div>
+
 </section>
         <section id="team-grid" class="container">
             <article class="card">
@@ -55,8 +58,8 @@
                 <p>Função que desempenha</p>
             </article>
         </section>
-    </main>
 
+    </main>
     <div id="modal" class="hidden">
         <div class="modal-content">
             <p id="mensagem-motivacional"></p>
