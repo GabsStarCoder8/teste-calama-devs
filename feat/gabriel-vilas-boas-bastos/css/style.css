@@ -338,3 +338,230 @@ img {
         font-size: 2rem;
     }
 }
+
+/*pagina de candidatura*/
+
+:root {
+    --candidatura-green: #3d5e40;
+    --candidatura-green-dark: #314d33;
+}
+
+.candidatura-header {
+    background-color: var(--candidatura-green);
+    color: var(--white);
+    padding-bottom: 120px;
+}
+
+.top-bar-candidatura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.top-bar-candidatura .spacer {
+    flex: 1;
+}
+
+.candidatura-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.candidatura-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.candidatura-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.candidatura-text p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.candidatura-logo-img {
+    flex: 1;
+    text-align: right;
+}
+
+/* corpo principal branco*/
+.candidatura-main {
+    background-color: var(--white);
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.candidatura-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.candidatura-info {
+    flex: 1;
+    padding-top: 60px;
+    max-width: 500px;
+}
+
+.candidatura-info h2 {
+    color: var(--dark-text);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.candidatura-info .intro-p {
+    font-size: 1.1rem;
+    color: var(--body-text);
+    margin-bottom: 40px;
+}
+
+/* efeito da linha do tempo */
+.timeline {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 2px solid var(--dark-text);
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 40px;
+    color: var(--body-text);
+    font-size: 1rem;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: -27px; 
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--dark-text);
+    border-radius: 50%;
+}
+
+/*formulário sobreposto */
+.form-container {
+    flex: 1;
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    margin-top: -100px; 
+    position: relative;
+    z-index: 10;
+    max-width: 500px;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: var(--dark-text);
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #dcdcdc; 
+    font-size: 1rem;
+    outline: none;
+}
+
+.input-group input:focus {
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #38a118; 
+    color: var(--white);
+    padding: 15px;
+    border: none;
+    border-radius: 30px; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #2e8b13;
+}
+
+.msg-final {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--body-text);
+    margin-top: 80px;
+    padding-top: 40px;
+    max-width: 800px;
+}
+
+.candidatura-footer {
+    background-color: var(--candidatura-green-dark);
+    color: var(--white);
+    text-align: center;
+    padding-top: 60px;
+}
+
+.candidatura-footer h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.candidatura-footer p {
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+}
+
+.footer-bottom {
+    background-color: var(--candidatura-green);
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .candidatura-hero,
+    .candidatura-content {
+        flex-direction: column;
+    }
+    
+    .candidatura-text {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .form-container {
+        margin-top: 0; 
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    .top-bar-candidatura {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
